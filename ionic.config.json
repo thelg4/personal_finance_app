@@ -1,0 +1,7 @@
+{
+  "name": "finance_app_w_firebase",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

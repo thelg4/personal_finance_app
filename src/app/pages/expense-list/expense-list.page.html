@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Expenses</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="home"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item *ngFor="let expense of (expenses | async)" (click)=viewExpense(expense)>
+      <ion-label>{{expense.name}}</ion-label>
+      <ion-label>{{expense.amount}}</ion-label>
+      <ion-label>{{expense.description}}</ion-label>
+      <ion-label>{{expense.date}}</ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>

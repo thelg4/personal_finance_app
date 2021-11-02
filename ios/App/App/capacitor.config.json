@@ -1,0 +1,13 @@
+{
+  "appId": "io.ionic.starter",
+  "appName": "finance_app_w_firebase",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "www",
+  "plugins": {
+    "SplashScreen": {
+      "launchShowDuration": 0
+    }
+  },
+  "cordova": {}
+}

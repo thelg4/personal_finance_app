@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Expenses</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="tools"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-button (click)="newExpense()" expand="block" color="danger">New Expense</ion-button>
+
+  <ion-button (click)="viewExpenses()" expand="block" color="tertiary">View Expenses</ion-button>
+</ion-content>
+
+

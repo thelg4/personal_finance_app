@@ -1,0 +1,36 @@
+<ion-header>
+    <ion-toolbar>
+      <ion-title color="contrast">Welcome</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<ion-list>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Expenses</ion-card-title>
+    </ion-card-header>
+
+    <ion-item>
+      <button ion-button round icon-only (click)="loadExpenses()">
+        <ion-icon name="arrow-forward-circle-outline"></ion-icon>
+      </button>
+
+    </ion-item>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Loans</ion-card-title>
+    </ion-card-header>
+
+    <ion-item>
+      <button ion-button round icon-only (click)="loadLoans()">
+        <ion-icon name="arrow-forward"></ion-icon>
+      </button>
+
+    </ion-item>
+  </ion-card>
+</ion-list>
+</ion-content>

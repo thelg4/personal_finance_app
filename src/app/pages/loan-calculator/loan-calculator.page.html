@@ -1,0 +1,40 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Loan Calculator</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="tools"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-content>
+    <ion-list>
+  
+      <ion-item>
+        <ion-label floating>Loan Amount</ion-label>
+        <ion-input type="number" [value]="presentValue" [(ngModel)]="presentValue"></ion-input>
+      </ion-item>
+      
+      <ion-item>
+        <ion-label floating>Interest rate</ion-label>
+        <ion-input type="number" [value]="interest" [(ngModel)]="interest"></ion-input>
+      </ion-item>
+      
+      <ion-item>
+        <ion-label floating>Payment Amount</ion-label>
+        <ion-input type="number" [value]="payment" [(ngModel)]="payment"></ion-input>
+      </ion-item>
+  
+      <ion-item>
+        <ion-label floating>Number of Periods</ion-label>
+        <ion-input type="number" [value]="periods" [(ngModel)]="periods"></ion-input>
+      </ion-item>
+      
+    </ion-list>
+  
+    <ion-button (click)="calculateLoan()" expand="block" color="primary">Calculate</ion-button>
+  
+  
+  </ion-content>
+</ion-content>

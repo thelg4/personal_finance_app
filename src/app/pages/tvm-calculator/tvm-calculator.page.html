@@ -1,0 +1,44 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>TVM</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="tools"></ion-back-button>
+    </ion-buttons>
+    
+    <ion-buttons slot="end">
+      <button ion-button slot="end" icon-only>
+        <ion-icon name="information-circle"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+
+    <ion-item>
+      <ion-label floating>Amount Invested Today</ion-label>
+      <ion-input type="number" [value]="presentValue" [(ngModel)]="presentValue"></ion-input>
+    </ion-item>
+    
+    <ion-item>
+      <ion-label floating>Interest rate</ion-label>
+      <ion-input type="number" [value]="interest" [(ngModel)]="interest"></ion-input>
+    </ion-item>
+    
+    <ion-item>
+      <ion-label floating>Additional Payments</ion-label>
+      <ion-input type="number" [value]="payment" [(ngModel)]="payment"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label floating>Number of Periods</ion-label>
+      <ion-input type="number" [value]="periods" [(ngModel)]="periods"></ion-input>
+    </ion-item>
+    
+  </ion-list>
+
+  <ion-button (click)="calculateTVM()" expand="block" color="primary">Calculate</ion-button>
+
+
+</ion-content>
